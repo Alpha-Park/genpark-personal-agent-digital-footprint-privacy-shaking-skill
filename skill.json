@@ -1,0 +1,27 @@
+{
+  "name": "genpark-personal-agent-digital-footprint-privacy-shaking-skill",
+  "version": "1.0.0",
+  "description": "Audits browser and device fingerprint entropy, models anonymity set sizes, and synthesizes high-entropy decoy search schedules to scramble algorithmic ad profiles.",
+  "tools": [
+    {
+      "name": "audit_fingerprint_entropy",
+      "description": "Audits browser/device fingerprint entropy and calculates global anonymity set size.",
+      "parameters": {
+        "canvas_hash": "string (optional)",
+        "webgl_renderer": "string (optional)",
+        "user_agent": "string (optional)",
+        "screen_res": "string (optional)",
+        "audio_fp": "string (optional)",
+        "timezone_offset_mins": "int (optional)",
+        "installed_fonts_count": "int (optional)"
+      }
+    },
+    {
+      "name": "generate_decoy_traffic_schedule",
+      "description": "Synthesizes a Poisson-dispersed decoy query schedule to obfuscate behavioral ad profiles.",
+      "parameters": {
+        "daily_noise_queries": "int (optional, default 16)"
+      }
+    }
+  ]
+}
